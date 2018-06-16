@@ -88,6 +88,7 @@ public class Application {
         c.publics(st);
 
         //static access
-        classes.publics(st);
+        classes.statis(st);
     }
+    //todo ep 20 stringbuilder
 }
