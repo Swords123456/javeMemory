@@ -1,3 +1,5 @@
+import Machines.info.Enum;
+
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -21,6 +23,11 @@ public class Application {
     public int coolness = 1;
 
     public static void main(String[] args) {
+        //Innerclasses
+        InnerClass.Change changes = new InnerClass.Change();
+        changes.change();
+
+        new Enum();
         try {
             fileAndException f = new fileAndException();
         } catch (FileNotFoundException e) {
