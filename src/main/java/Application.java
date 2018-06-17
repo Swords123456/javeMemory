@@ -6,6 +6,9 @@ public class Application {
     int p = 0;
 
     public static void main(String[] args){
+
+        new StingBuilder();
+
         //Prints out a line.
         System.out.println("Hello Word!");
 
