@@ -7,22 +7,22 @@ public class StingBuilder {
         info += " ";
         info += "I am a builder";
 
-        System.out.print(info);
+        System.out.println(info);
 
         //efficient
         StringBuilder sb = new StringBuilder("");
 
-        sb.append("My name is %name%");
+        sb.append("My name is joe");
         sb.append(" ");
-        sb.append("I am a %job%");
-        System.out.print(sb.toString());
+        sb.append("I am a skydive");
+        System.out.println(sb.toString());
 
         StringBuilder sb1 = new StringBuilder("");
 
         sb1.append("My name is Roger")
         .append(" ")
         .append("I am a hi");
-        System.out.print(sb.toString());
+        System.out.println(sb.toString());
 
 
         //Thread safe!
@@ -31,7 +31,7 @@ public class StingBuilder {
 
         // \n newline  \t tab line
         System.out.print("Hey");
-        System.out.printf("hey my name %10 is %d and %f\n", 5, 0.8);
+        System.out.printf("hey my name is %d and %f\n", 5, 0.8);
 
     }
 

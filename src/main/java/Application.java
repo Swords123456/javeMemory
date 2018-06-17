@@ -1,24 +1,34 @@
 import java.util.Scanner;
 
+
+/*
+* private - can only be acceced in the same class
+* public - can be accessed from anywhere
+* protected - can be accessed from sub-classes, packages and the same class
+* no modifier - can only be accessed from the same package
+* */
+
 public class Application {
 
     //Public variable been declared!
     int p = 0;
 
+    //only this class can access this variable
+    private int diamater = 1;
+
+    //other this class can access this variable
+    public int coolness = 1;
+
     public static void main(String[] args){
 
-        //inheritence
-        new Machine().start();
-        new Car().start();
+        /*     Casting     */
 
-        //interfaces
-        Machine m =new Machine();
-        Person p = new Person("Joe");
+        float a = 5.6f;
+        int aToInt = (int) a;
 
-        m.start();
-        p.greet();
+        //float is now an int
 
-
+        /*                   String builder                     */
         new StingBuilder();
 
         //Prints out a line.
@@ -105,5 +115,5 @@ public class Application {
         //static access
         classes.statis(st);
     }
-    //todo ep 20 stringbuilder
+
 }
