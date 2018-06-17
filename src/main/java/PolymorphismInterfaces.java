@@ -1,3 +1,8 @@
+import Machines.info.Car;
+import Machines.info.Info;
+import Machines.info.Machine;
+import Machines.info.Person;
+
 public class PolymorphismInterfaces{
 
     public void Polymorphism(){

@@ -1,4 +1,8 @@
-public class Person implements Info{
+package Machines.info;
+
+import Machines.info.Info;
+
+public class Person implements Info {
 
     private String name;
 

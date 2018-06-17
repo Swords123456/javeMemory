@@ -1,6 +1,9 @@
+package Machines.info;
+
+import Machines.info.Info;
 
 //implements interface
-public class Machine implements Info{
+public class Machine implements Info {
 
     private int id = 7;
 

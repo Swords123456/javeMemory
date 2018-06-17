@@ -1,3 +1,4 @@
+package Machines.info;
 
 //Interface
 public interface Info {

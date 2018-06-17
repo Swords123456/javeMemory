@@ -1,12 +1,13 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
 /*
-* private - can only be acceced in the same class
-* public - can be accessed from anywhere
-* protected - can be accessed from sub-classes, packages and the same class
-* no modifier - can only be accessed from the same package
-* */
+ * private - can only be acceced in the same class
+ * public - can be accessed from anywhere
+ * protected - can be accessed from sub-classes, packages and the same class
+ * no modifier - can only be accessed from the same package
+ * */
 
 public class Application {
 
@@ -19,7 +20,12 @@ public class Application {
     //other this class can access this variable
     public int coolness = 1;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        try {
+            fileAndException f = new fileAndException();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         /*     Casting     */
 
@@ -51,25 +57,25 @@ public class Application {
 
         //repeated. While repeats code until the condition is met.
         double s = Math.floor(Math.random() * 5);
-        while (s < 1){
+        while (s < 1) {
             s = Math.floor(Math.random() * 5);
             System.out.println("Hey");
         }
 
         //Executes the code first, then checks
-        do{
+        do {
             double sr = Math.floor(Math.random() * 5);
             System.out.println("Hey");
-        }while (s < 1);
+        } while (s < 1);
 
         //calling a method
         switch1(l);
     }
 
     //a new method that contains parameters
-    public static void switch1(String st){
+    public static void switch1(String st) {
         //a switch statement
-        switch (st){
+        switch (st) {
             case "start":
                 System.out.println("hey");
                 break;
@@ -79,33 +85,33 @@ public class Application {
         }
 
         //an if statement
-        if(st == "start"){
+        if (st == "start") {
             //for loop
-            for(int i = 0; i < 0; i++){
+            for (int i = 0; i < 0; i++) {
                 //stuuf
             }
         }
 
 
         //arrays
-        String[] st1 = {"hi", "there", "whats","up"};
+        String[] st1 = {"hi", "there", "whats", "up"};
         String[] st2 = new String[3];
 
         //bad practice
-        for(int c = 0; c < st1.length; c++){
+        for (int c = 0; c < st1.length; c++) {
             //more stuff
         }
 
         //good practise
-        for(String s: st1){
+        for (String s : st1) {
             //more stuff
         }
 
         //multidimensional arrays
         int[][] g = {
-            { 0, 1, 2},
-            { 23, 11, 1},
-            { 230, 1123, 122}
+                {0, 1, 2},
+                {23, 11, 1},
+                {230, 1123, 122}
         };
 
         //new instance access

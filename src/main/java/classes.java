@@ -1,6 +1,6 @@
 public class classes {
 
-    //actualy dont do String name instead
+    //actualy dont, do String name instead
     String name;
 
     //multiple constructors
@@ -31,7 +31,7 @@ public class classes {
         return name;
     }
 
-    //setyers
+    //setters
     public void setName(String name) {
         this.name = name;
     }
