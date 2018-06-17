@@ -7,6 +7,18 @@ public class Application {
 
     public static void main(String[] args){
 
+        //inheritence
+        new Machine().start();
+        new Car().start();
+
+        //interfaces
+        Machine m =new Machine();
+        Person p = new Person("Joe");
+
+        m.start();
+        p.greet();
+
+
         new StingBuilder();
 
         //Prints out a line.
