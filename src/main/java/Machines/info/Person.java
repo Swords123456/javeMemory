@@ -10,7 +10,10 @@ public class Person implements Info {
         System.out.println("Hey there");
     }
 
-    public Person(String name){
+    int id;
+
+    public Person(String name, int id){
+        this.id = id;
         this.name = name;
     }
 

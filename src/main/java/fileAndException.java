@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class fileAndException {
+public class fileAndException implements AutoCloseable{
 
     public fileAndException() throws FileNotFoundException {
 
@@ -12,7 +12,7 @@ public class fileAndException {
         }
 
         //scanner
-        String fileDir = "/Users/ibrahimhizamul/IdeaProjects/javeMemory/example.txt";
+        String fileDir = "example.txt";
 
         File file = new File(fileDir);
 
@@ -80,6 +80,11 @@ public class fileAndException {
 
         System.out.println("Running successful");
     }
+
+    @Override
+    public void close() throws Exception {
+        System.out.println("Closing");
+    }
 }
 
 //Runtime exceptions dont have to be handled
@@ -88,5 +93,19 @@ public class fileAndException {
 class serverException extends Exception{
     public serverException(String st){
         super(st);
+    }
+}
+
+class fileWrite extends Exception{
+    public fileWrite(){
+        File file = new File("text.txt");
+
+        try(BufferedWriter w = new BufferedWriter(new FileWriter(file))){
+            w.write("Welcome to this new world!");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

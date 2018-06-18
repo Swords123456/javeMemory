@@ -23,13 +23,25 @@ public class Application {
     public int coolness = 1;
 
     public static void main(String[] args) {
+
+        //Recursion
+        new Recursion();
+
+
+        /*                                   Writer                                               */
+
+
+
         //Innerclasses
         InnerClass.Change changes = new InnerClass.Change();
         changes.change();
 
         new Enum();
+
+
         try {
             fileAndException f = new fileAndException();
+            fileWrite w = new fileWrite();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -22,7 +22,7 @@ public class PolymorphismInterfaces{
     public void Interface(){
         //interfaces
         Machine m = new Machine();
-        Person pe = new Person("Joe");
+        Person pe = new Person("Joe", 1);
 
         m.start();
         pe.greet();
