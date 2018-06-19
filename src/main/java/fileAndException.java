@@ -100,12 +100,23 @@ class fileWrite extends Exception{
     public fileWrite(){
         File file = new File("text.txt");
 
+        //Creates a new file
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         try(BufferedWriter w = new BufferedWriter(new FileWriter(file))){
-            w.write("Welcome to this new world!");
+            for(int c = 0; c < 10; c++){
+                w.write("Welcome to this new world!");
+                w.newLine();
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }

@@ -2,8 +2,11 @@ package Machines.info;
 
 import Machines.info.Info;
 
-public class Person implements Info {
+import java.io.Serializable;
 
+public class Person implements Info, Serializable {
+
+    private static final long serialVersionUID = 3023023032023L;
     private String name;
 
     public void greet(){
@@ -15,6 +18,14 @@ public class Person implements Info {
     public Person(String name, int id){
         this.id = id;
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                '}';
     }
 
     public void showInfo() {
