@@ -5,7 +5,7 @@ import Machines.info.Person;
 
 public class PolymorphismInterfaces{
 
-    public void Polymorphism(){
+    public static void main(String[] args){
         //inheritence
         new Machine().start();
         new Car().start();
@@ -13,10 +13,8 @@ public class PolymorphismInterfaces{
         //Polymorphism.
         Machine mw = new Car();
 
-        //uses the car method. cant uses any new car methods
+        //uses the cars stop method. Cant uses any new car methods
         mw.stop();
-
-
 
     }
     public void Interface(){
