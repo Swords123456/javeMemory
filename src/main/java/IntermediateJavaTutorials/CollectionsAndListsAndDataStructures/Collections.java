@@ -1,4 +1,4 @@
-package IntermediateJavaTutorials;
+package IntermediateJavaTutorials.CollectionsAndListsAndDataStructures;
 
 /*
  * This code was originally designed and coded by Swords1234.

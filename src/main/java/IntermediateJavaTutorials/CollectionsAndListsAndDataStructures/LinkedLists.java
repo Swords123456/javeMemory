@@ -1,4 +1,4 @@
-package IntermediateJavaTutorials;
+package IntermediateJavaTutorials.CollectionsAndListsAndDataStructures;
 
 /*
  * This code was originally designed and coded by Swords1234.
@@ -9,7 +9,7 @@ package IntermediateJavaTutorials;
 import java.util.List;
 import java.util.ListIterator;
 
-public class LinkedList {
+public class LinkedLists {
 
     public static void main(String[] args){
         String[] things = {"apples", "noobs", "pgwne", "bacon", "goATS"};
