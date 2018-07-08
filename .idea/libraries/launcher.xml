@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="launcher">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Library/Application Support/minecraft/launcher.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Library/Application Support/minecraft/launcher.jar!/" />
+    </SOURCES>
+  </library>
+</component>
