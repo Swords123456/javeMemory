@@ -1,4 +1,4 @@
-package IntermediateJavaTutorials;
+package IntermediateJavaTutorials.OvalSlider;
 
 /*
  * This code was originally designed and coded by Swords1234.
@@ -9,5 +9,10 @@ package IntermediateJavaTutorials;
 import javax.swing.*;
 
 public class OvalSlider extends JPanel {
-    
+    public static void main(String[] args){
+        TheWindow window = new TheWindow();
+        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        window.setSize(230, 280);
+        window.setVisible(true);
+    }
 }

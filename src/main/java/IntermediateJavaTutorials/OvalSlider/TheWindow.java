@@ -6,5 +6,26 @@ package IntermediateJavaTutorials.OvalSlider;
  * You can also contact him by his Discord: sword1234#6398
  */
 
-public class TheWindow {
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
+
+public class TheWindow extends JFrame {
+    private JSlider slider;
+    private DrawOval myPanel;
+
+    public TheWindow(){
+        super("The title");
+        myPanel = new DrawOval();
+        myPanel.setBackground(Color.CYAN);
+
+        slider = new JSlider(SwingConstants.HORIZONTAL, 0, 200, 10);
+        slider.setMajorTickSpacing(10);
+        slider.setPaintTicks(true);
+
+        slider.addChangeListener(e -> myPanel.setD(slider.getValue()));
+        add(slider, BorderLayout.SOUTH);
+        add(myPanel, BorderLayout.CENTER);
+    }
 }
