@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="google">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/GoogleAuth-master.zip!/GoogleAuth-master/src/main/java" />
+      <root url="jar://$USER_HOME$/Downloads/GoogleAuth-master.zip!/GoogleAuth-master/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
